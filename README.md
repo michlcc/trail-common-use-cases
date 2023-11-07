@@ -1,16 +1,13 @@
-# trail-common-use-cases
-
-
 ## TIPS GIT COMMANDS
 
-__ listar branches remotas -> __  ``` git branch -a ```
-__ criar branch local -> __ ``` git checkout [nome-nova-branch] - b ```
-__ enviar branch local para remota -> __ ``` git push -u origin [nome-da-branch] ```
-__ salvar alterações no stage __ ``` git add README.md ```
-__ salvar alteração  para o commit __ ``` git commit -m “More changes to the README” ```
-__ enviar commit __ ``` git push -u origin new-branch-2 ```
-__ trazer alterações remotas __ ``` git pull ```
-__ mesclar main remota com o branch remoto considerando o HEAD atual __ ``` git merge origin/main ```
+- **  listar branches remotas **  ``` git branch -a ```
+- ** criar branch local ** ``` git checkout [nome-nova-branch] - b ```
+- ** enviar branch local para remota ** ``` git push -u origin [nome-da-branch] ```
+- ** salvar alterações no stage ** ``` git add README.md ```
+- ** salvar alteração  para o commit ** ``` git commit -m “More changes to the README” ```
+- ** enviar commit ** ``` git push -u origin new-branch-2 ```
+- ** trazer alterações remotas ** ``` git pull ```
+- ** mesclar main remota com o branch remoto considerando o HEAD atual ** ``` git merge origin/main ```
 
 
 ## PREPARE VSCODE
@@ -74,11 +71,13 @@ __ mesclar main remota com o branch remoto considerando o HEAD atual __ ``` git 
 
 ## REPOSITORY OVERVIEW
 
-    > [!NOTE]
+The trail-common-use-cases repository is in its infancy and there are no plans for periodic updates yet. Observations of the branches and content worked on will be included below.
+
+    >[!NOTE]
     > Para o deploy vlocity seguir o preparo do ambiente conforme em [vlocity_build](https://github.com/vlocityinc/vlocity_build#install-nodejs)
 
-    > [!IMPORTANT]
+    >[!IMPORTANT]
     > Incluir aqui...
 
-    > [!WARNING]
+    >[!WARNING]
     > Incluir aqui...
