@@ -1,14 +1,14 @@
 # trail-common-use-cases
 
 
-##COMANDOS GIT
+## COMANDOS GIT
 
 listar branches remotas -> git branch -a 
 criar branch local -> git checkout [nome-nova-branch] - b
 enviar branch local para remota -> git push -u origin [nome-da-branch]
 
 
-PREPARAR O VSCODE
+## PREPARAR O VSCODE
 
 1. Extensões
     * Debugger
@@ -34,34 +34,35 @@ PREPARAR O VSCODE
             obs.: lembrar de colocar os brakpoints na classe que deseja observar o debugger contido no log
     * Testes e cobertura
 
-DEPLOY
+## DEPLOY
 
 1. Safira Energia 2023
-
+    ```
     $ sf project retrieve start -c -x manifest/package-classes-flows.xml -o saf-hlg
     $ sf project deploy validate -x manifest/package-classes-flows.xml -o saf-hlg
     $ sf project deploy start -x manifest/package-classes-flows.xml -o saf-hlg -l NoTestRun
     $ sf project deploy start -x manifest/package-classes-flows.xml -o saf-prod -l RunSpecifiedTests --tests ContactMergeConvertedTest ContentDocumentLinkTriggerHandlerTest CustomFunctionImplementationTest DRStringTest IntegrationProcedureInvocableTest LeadConversionTest TablesMostQIRemoteClassTest
     $ sf project deploy start -x manifest/package-classes-flows.xml --target-org saf-prod --test-level RunAllTestsInOrg
+    ```
 
+    ### PASSO A PASSO VALIDAÇÕES P/ DEPLOY: 
 
-    PASSO A PASSO VALIDAÇÕES P/ DEPLOY 
+    0. preparar as ferramentas do ambiente
+    0.1. sincronizar os ambientes de sandbox com as branches (local)
+    0.2. sincronização das modificações nas branches de origem (remoto)
+    1. Montar o package a partir da sandbox DEV
+    2. Executar o script deploySprint ``` sh scripts/shell\ scripts/retrieveAll.sh ``` 
+    2. Executar o script deploySprint ``` sh scripts/shell\ scripts/deploySprint.sh ``` 
+    3. Conferir as alterações na seção do git change
+    4. Executar o deploy para homolog  ``` sf project deploy validate -x manifest/deploy13.xml -o saf-hlg ``` > validação na origem
+    5. deploy valendo( ``` $ sf project deploy start -x manifest/package.xml -o saf-hlg -l NoTestRun ```)
 
-    0 - preparar as ferramentas do ambiente
-    0.1 - sincronizar os ambientes de sandbox com as branches (local)
-    0.2 - sincronização das modificações nas branches de origem (remoto)
-    1 - Montar o package a partir da sandbox DEV
-    2 - Executar o script deploySprint (sh scripts/shell\ scripts/retrieveAll.sh)
-    2 - Executar o script deploySprint (sh scripts/shell\ scripts/deploySprint.sh)
-    3 - Conferir as alterações na seção do git change
-    4 - Executar o deploy para homolog (sf project deploy validate -x manifest/deploy13.xml -o saf-hlg)-> validação na origem
-    5 - deploy valendo($ sf project deploy start -x manifest/package.xml -o saf-hlg -l NoTestRun)
-
-    sh scripts/shell\ scripts/retriveAll.sh
-
+    ``` 
+    sh scripts/shell\ scripts/retriveAll.sh 
 
     sfdx sgd:source:delta -W -a 58 --to "sandbox/dev" --from "sandbox/homolog" --output "manifest/delta"
     sf sgd source delta -W -a 58 -f sandbox/homolog --to sandbox/dev --output manifest/delta
-
-    OBSERVAÇÕES:
-    - para o deploy vlocity seguir o preparo do ambiente conforme em https://github.com/vlocityinc/vlocity_build#install-nodejs
+    ```
+    
+    ### OBSERVAÇÕES:
+    * para o deploy vlocity seguir o preparo do ambiente conforme em https://github.com/vlocityinc/vlocity_build#install-nodejs
