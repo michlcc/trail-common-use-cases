@@ -1,7 +1,7 @@
 # trail-common-use-cases
 
 
-COMANDOS GIT
+##COMANDOS GIT
 
 listar branches remotas -> git branch -a 
 criar branch local -> git checkout [nome-nova-branch] - b
