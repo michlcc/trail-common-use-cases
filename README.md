@@ -16,7 +16,8 @@ Salesforce platform developer training repository
 
 ## PREPARE VSCODE
 
-### VSCODE EXTENSIONS AND PRE INSTALLATIONS EVALUATED
+VSCODE EXTENSIONS AND PRE INSTALLATIONS EVALUATED
+
 - [ ] Visual StudioCode
 - [ ] Java
    - Environment variables
