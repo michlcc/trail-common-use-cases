@@ -1,7 +1,25 @@
+#ARQUIVOS NÃO VERSIONADOS
+
+.husky
+.sf
+.sfdx
+.vscode
+config
+manifest
+scripts
+.eslintignore
+.forceignore
+.prettierignore
+.prettierrc
+jest.config.js
+package.json
+/plc-platform-developer/mlcc-org/README.md
+sfdx-project.json
+
 #ARQUIVOS VERSIONADOS
 
 /*
 /*/
 !.gitignore
-!/plc-platform-developer/mlcc-org/force-app/
+!/plc-platform-developer/
 !/youtube-software-engineering-and-sf/
