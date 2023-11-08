@@ -12,6 +12,10 @@ Salesforce platform developer training repository ...BUILDING
 - **enviar commit** ``` git push -u origin new-branch-2 ```
 - **trazer alterações remotas** ``` git pull ```
 - **mesclar main remota com o branch remoto considerando o HEAD atual** ``` git merge origin/main ```
+- **uma maneira de visualizar o histórico de commits exibindo os primeiros sete caracteres do hash SHA-1 e a mensagem de commit dos commits no branch atual.** ``` git log --oneline ```
+- **apresenta o histórico de commits em um gráfico ASCII exibindo as diferentes ramificações no repositório e seus commits** ``` git log --oneline --graph ```
+- **exibe o mesmo gráfico ASCII exibido usando o modificador --graph, mas também inclui os nomes das ramificações para os diferentes commits exibidos** ``` git log --oneline --graph --decorate ```
+- **mais dicas de comandos em:** trailhead [Trabalhe com seu histórico no Git](https://trailhead.salesforce.com/content/learn/modules/git-and-git-hub-basics/work-with-your-history-in-git?trail_id=set-up-your-workspace-and-install-developer-tools)
 
 
 ## PREPARE VSCODE
