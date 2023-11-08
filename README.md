@@ -1,6 +1,6 @@
 # SUMMARY GUIDE TO SALESFORCE DEVELOPER PLATFORM 
 
-Salesforce platform developer training repository ...CHANGES
+Salesforce platform developer training repository ...BUILDING
 
 ## TIPS GIT COMMANDS
 
