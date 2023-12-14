@@ -66,6 +66,7 @@ SUMMARY COMMANDS
 
 ```
 sf project retrieve start -c -x manifest/[name-package].xml -o [alias-hlg]
+sfdx force:source:deploy -m LightningComponentBundle:myComponent
 sf project deploy validate -x manifest/[name-package].xml -o [alias-hlg]
 sf project deploy start -x manifest/[name-package].xml -o [alias-hlg] -l NoTestRun
 sf project deploy start -x manifest/[name-package].xml -o [alias-prod] -l RunSpecifiedTests --tests [all test classes here separated by space]
