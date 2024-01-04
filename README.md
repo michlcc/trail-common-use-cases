@@ -5,7 +5,7 @@ Salesforce platform developer training repository ...BUILDING
 ## TIPS GIT COMMANDS
 
 - **listar branches remotas**  ``` git branch -a ```
-- **criar branch local** ``` git checkout [nome-nova-branch] - b ```
+- **criar branch local** ``` git checkout -b [nome-nova-branch] ```
 - **enviar branch local para remota** ``` git push -u origin [nome-da-branch] ```
 - **salvar alterações no stage** ``` git add README.md ```
 - **salvar alteração  para o commit** ``` git commit -m “More changes to the README” ```
@@ -45,6 +45,9 @@ VSCODE EXTENSIONS AND PRE INSTALLATIONS EVALUATED
    - deployment model in prod  
 
 ## SALESFORCE DEPLOYMENT EXAMPLES
+- quick soql:
+```SELECT DeveloperName, TableEnumOrId FROM CustomField WHERE TableEnumOrId = '01I41000001KqgnEAC' order by DeveloperName```
+
 
 ### Energy Cloud E&U - with Vlocity components - Projeto SAF 2023
 
